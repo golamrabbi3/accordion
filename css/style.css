@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+
+.accordion .accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+}
+
+.accordion .accordion-item .accordion-head {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion .accordion-item .accordion-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.accordion .accordion-item .accordion-body {
+    border-top: 1px solid #ccc;
+    display: none;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.accordion .accordion-item .accordion-head, .accordion .accordion-body {
+    padding: 15px;
+}
+
+.accordion .accordion-item.show .accordion-body {
+    display: block;
+}

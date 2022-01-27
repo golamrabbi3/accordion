@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pure Javascript Accordion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="accordion" id="first-accordion">
+    <div class="accordion-item show">
+        <div class="accordion-head">
+            <div class="accordion-title">Lorem ipsum 1</div>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-body">
+            Phasellus sit amet erat eu est suscipit interdum.
+            Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+            vehicula dolor nec, tristique ligula.
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-head">
+            <div class="accordion-title">dolor sit amet</div>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-body">
+            Curabitur ultrices erat id tempor cursus.
+            Nam ligula enim, ullamcorper vulputate felis eget, dictum tempus libero.
+            Pellentesque vehicula in nunc vitae facilisis. Phasellus sit amet erat eu est suscipit interdum.
+            Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+            vehicula dolor nec, tristique ligula.
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-head">
+            <div class="accordion-title">Curabitur ultrices</div>
+            <div class="accordion-icon"></div>
+        </div>
+        <div class="accordion-body">
+            Lacinia et iaculis at, fringilla non enim.
+            Fusce rutrum turpis ut ex sagittis suscipit. Curabitur ultrices erat id tempor cursus.
+            Nam ligula enim, ullamcorper vulputate felis eget, dictum tempus libero.
+            Pellentesque vehicula in nunc vitae facilisis. Phasellus sit amet erat eu est suscipit interdum.
+            Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+            vehicula dolor nec, tristique ligula.
+        </div>
+    </div>
+</div>
+
+<script src="js/accordion.js"></script>
+<script>
+    new Accordion('#first-accordion', {
+        collapseSiblings: true,
+    });
+</script>
+</body>
+</html>
