@@ -1,7 +1,15 @@
-body {
-    font-family: sans-serif;
-}
+/**
+ * Plugin: Vanilla Accordion - Basic
+ * Description: A pure javascript accordion plugin for creating expandable & collapsible sections
+ * Plugin URL: https://w3artists.com
+ * Author: MG Rabbi
+ * Author Github: https://github.com/golamrabbi3
+ * Company: W3 Artists [https://w3artists.com]
+ * Version: 1.0.0
+ * License Type: MIT
+ */
 
+/* start: .accordion */
 .accordion .accordion-item {
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -30,6 +38,7 @@ body {
     padding: 15px;
 }
 
-.accordion .accordion-item.show .accordion-body {
+.accordion .accordion-item.active .accordion-body {
     display: block;
 }
+/* end: .accordion */

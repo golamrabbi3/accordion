@@ -2,61 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pure Javascript Accordion</title>
+    <title>Vanilla Accordion</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+    </style>
 </head>
 <body>
-<div class="accordion" id="first-accordion">
-    <div class="accordion-item show">
-        <div class="accordion-head">
-            <div class="accordion-title">Lorem ipsum 1</div>
-            <div class="accordion-icon"></div>
+    <main>
+        <div class="container">
+            <h2>First Demo Accordion</h2>
+            
+            <div class="accordion" id="first-accordion">
+                <div class="accordion-item active">
+                    <div class="accordion-head">
+                        <div class="accordion-title">Lorem ipsum 1</div>
+                        <span class="accordion-icon"></span>
+                    </div>
+                    <div class="accordion-body">
+                        Phasellus sit amet erat eu est suscipit interdum.
+                        Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+                        vehicula dolor nec, tristique ligula.
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <div class="accordion-title">dolor sit amet</div>
+                        <span class="accordion-icon"></span>
+                    </div>
+                    <div class="accordion-body">
+                        Curabitur ultrices erat id tempor cursus.
+                        Nam ligula enim, ullamcorper vulputate felis eget, dictum tempus libero.
+                        Pellentesque vehicula in nunc vitae facilisis. Phasellus sit amet erat eu est suscipit interdum.
+                        Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+                        vehicula dolor nec, tristique ligula.
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <div class="accordion-title">Curabitur ultrices</div>
+                        <span class="accordion-icon"></span>
+                    </div>
+                    <div class="accordion-body">
+                        Lacinia et iaculis at, fringilla non enim.
+                        Fusce rutrum turpis ut ex sagittis suscipit. Curabitur ultrices erat id tempor cursus.
+                        Nam ligula enim, ullamcorper vulputate felis eget, dictum tempus libero.
+                        Pellentesque vehicula in nunc vitae facilisis. Phasellus sit amet erat eu est suscipit interdum.
+                        Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+                        vehicula dolor nec, tristique ligula.
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Second Demo Accordion</h2>
+            <div class="accordion" id="second-accordion">
+                <div class="accordion-item active">
+                    <div class="accordion-head">
+                        <div class="accordion-title">Lorem ipsum 1</div>
+                        <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-body">
+                        Phasellus sit amet erat eu est suscipit interdum.
+                        Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+                        vehicula dolor nec, tristique ligula.
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <div class="accordion-title">dolor sit amet</div>
+                        <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-body">
+                        Curabitur ultrices erat id tempor cursus.
+                        Nam ligula enim, ullamcorper vulputate felis eget, dictum tempus libero.
+                        Pellentesque vehicula in nunc vitae facilisis. Phasellus sit amet erat eu est suscipit interdum.
+                        Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+                        vehicula dolor nec, tristique ligula.
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <div class="accordion-title">Curabitur ultrices</div>
+                        <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-body">
+                        Lacinia et iaculis at, fringilla non enim.
+                        Fusce rutrum turpis ut ex sagittis suscipit. Curabitur ultrices erat id tempor cursus.
+                        Nam ligula enim, ullamcorper vulputate felis eget, dictum tempus libero.
+                        Pellentesque vehicula in nunc vitae facilisis. Phasellus sit amet erat eu est suscipit interdum.
+                        Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
+                        vehicula dolor nec, tristique ligula.
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="accordion-body">
-            Phasellus sit amet erat eu est suscipit interdum.
-            Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
-            vehicula dolor nec, tristique ligula.
-        </div>
-    </div>
+    </main>
 
-    <div class="accordion-item">
-        <div class="accordion-head">
-            <div class="accordion-title">dolor sit amet</div>
-            <div class="accordion-icon"></div>
-        </div>
-        <div class="accordion-body">
-            Curabitur ultrices erat id tempor cursus.
-            Nam ligula enim, ullamcorper vulputate felis eget, dictum tempus libero.
-            Pellentesque vehicula in nunc vitae facilisis. Phasellus sit amet erat eu est suscipit interdum.
-            Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
-            vehicula dolor nec, tristique ligula.
-        </div>
-    </div>
+    <script src="js/accordion.js"></script>
+    <script>
+        // First Accordion with all available options
+        new Accordion('#first-accordion', {
+            collapseSiblings: true,
+            collapseIcon: "-",
+            expandIcon: "+",
+            expandedEventHandler: (accordionItem, accordionItemIndex) => console.log('expanded'),
+            collapsedEventHandler: (accordionItem, accordionItemIndex) => console.log('collapsed'),
+        });
 
-    <div class="accordion-item">
-        <div class="accordion-head">
-            <div class="accordion-title">Curabitur ultrices</div>
-            <div class="accordion-icon"></div>
-        </div>
-        <div class="accordion-body">
-            Lacinia et iaculis at, fringilla non enim.
-            Fusce rutrum turpis ut ex sagittis suscipit. Curabitur ultrices erat id tempor cursus.
-            Nam ligula enim, ullamcorper vulputate felis eget, dictum tempus libero.
-            Pellentesque vehicula in nunc vitae facilisis. Phasellus sit amet erat eu est suscipit interdum.
-            Fusce placerat lorem lectus, ut pulvinar nulla suscipit sed. Curabitur nec velit consectetur,
-            vehicula dolor nec, tristique ligula.
-        </div>
-    </div>
-</div>
-
-<script src="js/accordion.js"></script>
-<script>
-    new Accordion('#first-accordion', {
-        collapseSiblings: true,
-    });
-</script>
+        // Second Accordion
+        new Accordion('#second-accordion');
+    </script>
 </body>
 </html>
